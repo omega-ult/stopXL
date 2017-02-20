@@ -16,8 +16,8 @@ if '%errorlevel%' NEQ '0' (
 :-----------------------
 
 call taskkill /f /t /im Thunder.exe
-call sc config XLServicePlatform start=demand
-call sc config XLNXService start=demand
+call sc config XLServicePlatform start= demand
+call sc config XLNXService start= demand
 call sc stop XLServicePlatform
 call sc stop XLNXService
 call taskkill /f /t /im ThunderPlatform.exe
